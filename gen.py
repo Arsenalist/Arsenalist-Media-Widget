@@ -30,7 +30,7 @@ def main():
     username = args['username']
     password = args['password']
 
-    wp = Client('http://arsenalist.com/xmlrpc.php', username, password)
+    wp = Client('https://arsenalist.com/xmlrpc.php', username, password)
     posts = wp.call(GetPosts())
     bits = []
     for p in posts:
